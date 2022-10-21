@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#letra-v{
+    font-family: 'Lora', serif;
+    color: #529F0F;
+}
+#letra-g{
+    color: #575757;
+    font-family: 'Work Sans', sans-serif;
+}
+#letra-g-2{
+    color: #575757;
+    font-family: 'Lora', serif;
+}
+#letra-1{
+    font-family: 'Playfair Display', serif;
+}
+#letra{
+    font-family: 'Work Sans', sans-serif;
+}
+#letra-2{
+    font-family: 'Lora', serif;
+}
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem;
+    font-size: 0.8rem;
+}
+.l-encabezado{
+    display: flex;
+}
+.l-encabezado #letra{
+    padding: 1.5rem;
+}
+.encabezado .logo{
+    display: flex;
+    justify-content: center;
+}
+.c-encabezado{
+    display: flex;
+    gap: 0.3rem;
+}
+.imagen-carro{
+    width: 1rem;
+}
+.want{
+    background-image: url(Imagenes/slider-2.jpg);
+    background-position: center center; 
+	background-repeat: no-repeat;
+	background-size: cover; 
+    background-position: center;
+    /* width: 100vw;  */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 1.5rem 0rem 1.5rem;
+}
+.texto-1{
+    text-align: center;
+}
+.texto-1 #letra-1{
+    font-size: 3rem;
+    width: 30rem;
+    padding-bottom: 1rem;
+}
+.contenedor-2{
+    /* margin: 6rem 0rem 6rem 0rem; */
+    display: flex;
+    justify-content: center;
+}
+.banner{
+    display: flex;
+    justify-content: space-around;
+    margin: 6rem 0rem 6rem 0rem;
+    gap: 2rem;
+}
+.banner-1{
+    background-image: url(Imagenes/banner-1.png);
+    background-position: center center; 
+	background-repeat: no-repeat;
+	background-size: cover; 
+    background-position: center;
+    width: 29rem; 
+    height: 14rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 2rem;
+    padding-left: 2rem;
+}
+.banner-1 #letra-v{
+    font-size: 2.3rem;
+    font-family: 'Lora', serif;
+    padding-bottom: 0.5rem;
+}
+.banner-1 #letra{
+    font-size: 0.9rem;
+}
+.banner-2{
+    background-image: url(Imagenes/banner-2.png);
+    background-position: center center; 
+	background-repeat: no-repeat;
+	background-size: cover;
+    width: 29rem;  
+    height: 14rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 2rem;
+}
+.banner-2 #letra-v{
+    font-size: 2.3rem;
+    padding-bottom: 0.4rem;
+}
+.banner-2 #letra{
+    font-size: 0.9rem;
+}
+.contenedor-3{
+    background-image: url(Imagenes/bg-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.t-latest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333333;
+}
+.letra-latest{
+    font-size: 2rem;
+    padding: 5rem 0rem 1rem 0rem;
+}
+.letra-lorem{
+    font-size: 0.9rem;
+    width: 26rem;
+    padding-bottom: 3rem;
+}
+.contenedor-3-1{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 6rem;
+}
+.imagen-v{
+    display: flex;
+    position: relative;
+}
+.imagen-v #letra-2{
+    position: absolute;
+    color: white;
+    padding: 1.4rem 0rem 0rem 0.8rem;
+    font-size: 0.75rem;
+}
+.imagen-c-v{
+    width: 14rem;
+    border: 2rem;
+}
+.circulo-v{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #529F0F;
+    border-radius: 50%;
+    position:absolute;
+    margin: 0.5rem;
+}
+.texto-c-3{
+    margin: 1rem 0rem 1rem 0rem;
+}
+.texto-c-3 #letra-g{
+    padding-bottom: 0.4rem;
+}
+.contenedor-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 6rem 0rem 6rem 0rem;
+    color: #333333;
+}
+.contenedor-4 #letra-2{
+    font-size: 1.2rem;
+    width: 35rem;
+    margin-top: 1rem;
+}
+.contenedor-4 #letra{
+    font-size: 0.7rem;
+    margin-top: 2rem;
+}
+.contenedor-4 #letra-g{
+    font-size: 0.7rem;
+    margin-top: 0.7rem;
+}
+.contenedor-5{
+    background: #ecebeb;
+}
+.contenedor-5-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contenedor-5-2,.contenedor-5-3{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.contenedor-5-3{
+    padding-bottom: 6rem;
+}
+
+.contenedor-6{
+    background-image: url(Imagenes/bg-2.jpg);
+    background-position: center center; 
+	background-repeat: no-repeat;
+	background-size:cover;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contenedor-6 #letra-1{
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+form{
+    display: flex;
+}
+form #letra-2{
+    width: 20rem;
+    height: 3rem;
+    border-radius: 0;
+    border-width: 0.1rem;
+    border-color: #d1d1d1;
+    padding-left: 1rem;
+    background-color: transparent;
+}
+.button{
+    background-color: black;
+    color: white;
+    height: 3.2rem;
+    width: 9rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+}
+.contenedor-7{
+    background-image: url(Imagenes/bg-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contenedor-7-l{
+    text-align: center;
+    font-size: 2rem;
+    padding: 6rem 0rem 3rem 0rem;
+}
+.contenedor-7-1{
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+}
+.contenedor-7-1 img{
+    width: 20rem;
+}
+.contenedor-7-1 #letra-v{
+    font-size: 0.8rem;
+    padding-top: 1rem;
+}
+.contenedor-7-1 #letra-1{
+    font-size: 1.4rem;
+    padding-top: 0.7rem;
+}
+.contenedor-7-1 #letra-g-2{
+    width: 20rem;
+    padding-top: 1rem;
+    line-height: 1.7;
+}
+.contenedor-7-1 #letra{
+    font-size: 0.7rem;
+    padding: 2rem 0rem 6rem 0rem;
+}
+.contenedor-8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 6rem 0rem 6rem 0rem;
+}
+ul{
+    list-style-type: none;
+}
+.contenedor-9{
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
+    padding-bottom: 5rem;
+}
+.contenedor-9 #letra-1{
+    font-size: 1.2rem;
+    padding: 5rem 0rem 1rem 0rem;
+}
+.contenedor-9 li{
+    font-size: 0.8rem;
+    padding-top: 1rem;
+}
+.contenedor-10{
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.contenedor-10 p{
+    font-size: 0.8rem;
+}
+.contenedor-10 p img{
+    width: 1rem;
+}
+
