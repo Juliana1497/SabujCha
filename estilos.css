@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 #letra-v{
     font-family: 'Lora', serif;
@@ -23,60 +25,74 @@
 #letra-2{
     font-family: 'Lora', serif;
 }
+
+/*-------------RESPONSIVE PARA PANTALLAS DE 230PX DE ANCHO---------------*/
+/*ECABEZADO*/
 .encabezado{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1.5rem;
+    margin: 1.5rem 0rem;
     font-size: 0.8rem;
+    max-width: 100%;
 }
 .l-encabezado{
-    display: flex;
-}
-.l-encabezado #letra{
-    padding: 1.5rem;
-}
-.encabezado .logo{
-    display: flex;
-    justify-content: center;
+    display: none;
 }
 .c-encabezado{
     display: flex;
     gap: 0.3rem;
+    align-items: center;
+}
+.menu-carro{
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    width: 3rem;
+    display: flex;
+    position: relative;
 }
 .imagen-carro{
     width: 1rem;
+    display: flex;
+    position:absolute;
+    margin: 1rem;
 }
+
+/*PRIMER CONTENEDOR*/
 .want{
     background-image: url(Imagenes/slider-2.jpg);
     background-position: center center; 
 	background-repeat: no-repeat;
-	background-size: cover; 
-    background-position: center;
-    /* width: 100vw;  */
+	background-size: cover;  
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0rem 1.5rem 0rem 1.5rem;
-}
-.texto-1{
     text-align: center;
+    max-width: 100%;
 }
 .texto-1 #letra-1{
-    font-size: 3rem;
-    width: 30rem;
-    padding-bottom: 1rem;
+    font-size: 2rem; 
+    padding-bottom: 2rem;
 }
+.texto-1 #letra{
+    font-size: 1rem;
+}
+
+/*SEGUNDO CONTENEDOR*/
 .contenedor-2{
-    /* margin: 6rem 0rem 6rem 0rem; */
     display: flex;
     justify-content: center;
+    max-width: 100%;
 }
 .banner{
     display: flex;
-    justify-content: space-around;
-    margin: 6rem 0rem 6rem 0rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3rem 0rem 0rem 0rem;
     gap: 2rem;
 }
 .banner-1{
@@ -85,8 +101,8 @@
 	background-repeat: no-repeat;
 	background-size: cover; 
     background-position: center;
-    width: 29rem; 
-    height: 14rem;
+    width: 18rem; 
+    height: 8rem;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -94,37 +110,41 @@
     padding-left: 2rem;
 }
 .banner-1 #letra-v{
-    font-size: 2.3rem;
+    font-size: 1.7rem;
     font-family: 'Lora', serif;
     padding-bottom: 0.5rem;
 }
 .banner-1 #letra{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 .banner-2{
     background-image: url(Imagenes/banner-2.png);
     background-position: center center; 
 	background-repeat: no-repeat;
 	background-size: cover;
-    width: 29rem;  
-    height: 14rem;
+    width: 18rem;  
+    height: 8rem;
     display: flex;
     justify-content: left;
     align-items: center;
     padding-left: 2rem;
+    margin-bottom: 6rem;
 }
 .banner-2 #letra-v{
-    font-size: 2.3rem;
+    font-size: 1.7rem;
     padding-bottom: 0.4rem;
 }
 .banner-2 #letra{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
+
+/*TERCER CONTENEDOR*/ 
 .contenedor-3{
     background-image: url(Imagenes/bg-1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 100%;
 }
 .t-latest{
     display: flex;
@@ -134,13 +154,15 @@
     color: #333333;
 }
 .letra-latest{
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 5rem 0rem 1rem 0rem;
 }
 .letra-lorem{
-    font-size: 0.9rem;
-    width: 26rem;
+    font-size: 0.8rem;
     padding-bottom: 3rem;
+}
+.no-cel{
+    display: none;
 }
 .contenedor-3-1{
     display: flex;
@@ -155,12 +177,11 @@
 .imagen-v #letra-2{
     position: absolute;
     color: white;
-    padding: 1.4rem 0rem 0rem 0.8rem;
-    font-size: 0.75rem;
+    padding: 1.5rem 0rem 0rem 1rem;
+    font-size: 0.8rem;
 }
 .imagen-c-v{
-    width: 14rem;
-    border: 2rem;
+    width: 270px;
 }
 .circulo-v{
     width: 2.5rem;
@@ -168,25 +189,31 @@
     background-color: #529F0F;
     border-radius: 50%;
     position:absolute;
-    margin: 0.5rem;
+    margin: 0.7rem;
 }
 .texto-c-3{
-    margin: 1rem 0rem 1rem 0rem;
+    padding: 2rem 0rem 1rem 0rem;
 }
-.texto-c-3 #letra-g{
-    padding-bottom: 0.4rem;
+.texto-c-3 .dif{
+    font-size: 1rem;
 }
+.texto-c-3 #letra{
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+}
+
+/*CUARTO CONTENEDOR*/
 .contenedor-4{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 6rem 0rem 6rem 0rem;
+    margin: 3rem 0rem;
     color: #333333;
+    max-width: 100%;
 }
 .contenedor-4 #letra-2{
     font-size: 1.2rem;
-    width: 35rem;
     margin-top: 1rem;
 }
 .contenedor-4 #letra{
@@ -197,8 +224,11 @@
     font-size: 0.7rem;
     margin-top: 0.7rem;
 }
+
+/*QUINTO CONTENEDOR*/
 .contenedor-5{
     background: #ecebeb;
+    max-width: 100%;
 }
 .contenedor-5-1{
     display: flex;
@@ -215,6 +245,7 @@
     padding-bottom: 6rem;
 }
 
+/*SEXTO CONTENEDOR*/
 .contenedor-6{
     background-image: url(Imagenes/bg-2.jpg);
     background-position: center center; 
@@ -225,105 +256,296 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    max-width: 100%;
 }
 .contenedor-6 #letra-1{
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin-bottom: 2.5rem;
 }
 form{
     display: flex;
 }
 form #letra-2{
-    width: 20rem;
-    height: 3rem;
+    width: 10rem;
+    height: 3.5rem;
     border-radius: 0;
     border-width: 0.1rem;
     border-color: #d1d1d1;
     padding-left: 1rem;
     background-color: transparent;
+    font-size: 0.7rem;
 }
 .button{
     background-color: black;
     color: white;
-    height: 3.2rem;
-    width: 9rem;
+    width: 8rem;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
     font-size: 0.7rem;
 }
+
+/*SEPTIMO CONTENEDOR*/
 .contenedor-7{
     background-image: url(Imagenes/bg-1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
 }
 .contenedor-7-l{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.4rem;
     padding: 6rem 0rem 3rem 0rem;
 }
 .contenedor-7-1{
+    padding-left: 15px;
     display: flex;
     justify-content: center;
-    gap: 1rem; 
+    align-items: center;
+    flex-direction: column;
 }
 .contenedor-7-1 img{
-    width: 20rem;
+    width: 18rem;
 }
 .contenedor-7-1 #letra-v{
     font-size: 0.8rem;
     padding-top: 1rem;
 }
 .contenedor-7-1 #letra-1{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding-top: 0.7rem;
 }
 .contenedor-7-1 #letra-g-2{
-    width: 20rem;
     padding-top: 1rem;
     line-height: 1.7;
+    font-size: 1rem;
 }
 .contenedor-7-1 #letra{
-    font-size: 0.7rem;
-    padding: 2rem 0rem 6rem 0rem;
+    font-size: 1rem;
+    padding: 2rem 0rem 2rem 0rem;
 }
+
+/*OCTAVO CONTENEDOR*/
 .contenedor-8{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 6rem 0rem 6rem 0rem;
+    padding: 3rem;
+    max-width: 100%;
 }
 ul{
     list-style-type: none;
 }
+
+/*NOVENO CONTENEDOR*/
 .contenedor-9{
     background-color: #f7f7f7;
     display: flex;
-    justify-content: center;
-    gap: 9rem;
-    padding-bottom: 5rem;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 4rem 0px 0px 15px;
+    max-width: 100%;
 }
 .contenedor-9 #letra-1{
-    font-size: 1.2rem;
-    padding: 5rem 0rem 1rem 0rem;
+    font-size: 1.1rem;
+    padding: 3rem 0rem 1rem 0rem;
+    width: 10rem;
+}
+#sin-esp{
+    padding: 0.4rem 0rem;
 }
 .contenedor-9 li{
     font-size: 0.8rem;
     padding-top: 1rem;
 }
+
+
+/*DECIMO CONTENEDOR*/
 .contenedor-10{
     background-color: #e7e7e7;
     display: flex;
-    justify-content: space-around;
-    padding: 1rem;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    flex-direction: column;
+    max-width: 100%;
+    padding: 1rem 0rem;
 }
 .contenedor-10 p{
     font-size: 0.8rem;
+    padding-bottom: 1rem;
 }
 .contenedor-10 p img{
-    width: 1rem;
+    width: 0.8rem;
+}
+.pagos{
+    width: 50rem;
 }
 
+/*----------------------RESPONSIVE PARA PANTALLAS CON UN ANCHO MINIMO DE 1024PX---------------------*/
+@media (min-width: 1024px) {
+    .encabezado{
+        margin: 0.7rem 0rem;
+    }
+    .l-encabezado{
+        display: flex;
+    }
+    .l-encabezado #letra{
+        padding: 1rem;
+        font-size: 0.6rem;
+    }
+    .logo{
+        padding-right: 10rem;
+    }
+    .c-encabezado #letra{
+        font-size: 0.6rem;
+    }
+    .menu{
+        display: none;
+    }
+    .imagen-carro{
+        position: relative;
+    }
+    .texto-1 #letra-1{
+        font-size: 2.5rem; 
+        padding-bottom: 1rem;
+    }
+    .texto-1 #letra{
+        font-size: 0.9rem;
+    }
+    .banner{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .banner-1,.banner-2{
+        width: 22rem;
+        height: 10rem;
+        padding-left: 1rem;
+    }
+    .banner-1 #letra-v,.banner-2 #letra-v{
+        font-size: 1.7rem;
+    }
+    .banner-1 #letra,.banner-2 #letra{
+        font-size: 0.7rem;
+    }
+    .no-cel{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .letra-lorem{
+        width: 23rem;
+    }
+    .contenedor-3-1{
+        gap: 1.5rem;
+    }
+    .imagen-v #letra-2{
+        font-size: 0.6rem;
+        padding: 1.1rem 0.7rem;
+    }
+    .imagen-c-v{
+        width: 170px;
+    }
+    .circulo-v{
+        width: 2rem;
+        height: 2rem;
+        margin: 0.5rem;
+    }
+    .texto-c-3{
+        padding: 1rem 0rem;
+    }
+    .texto-c-3 .dif{
+        font-size: 0.9rem;
+    }
+    .texto-c-3 #letra{
+        font-size: 0.7rem;
+        padding-top: 0.5rem;
+    }
+    .contenedor-4 #letra-2{
+        font-size: 1rem;
+        margin-top: 1rem;
+        width: 30rem;
+    }
+    .contenedor-4 #letra{
+        font-size: 0.6rem;
+        margin-top: 2rem;
+    }
+    .contenedor-4 #letra-g{
+        font-size: 0.6rem;
+        margin-top: 0.7rem;
+    }
+    .contenedor-6{
+        height: 15rem;
+    }
+    form #letra-2{
+        width: 16rem;
+        height: 2.8rem;
+        font-size: 0.6rem;
+    }
+    .button{
+        width: 7rem;
+        font-size: 0.6rem;
+    }
+    .contenedor-7-1{
+        flex-direction: row;
+        gap: 1rem;
+        padding-left: 0px;
+    }
+    .contenedor-7-1 img{
+        width: 17rem;
+    }
+    .contenedor-7-1 #letra-v{
+        font-size: 0.7rem;
+    }
+    .contenedor-7-1 #letra-1{
+        font-size: 1.2rem;
+    }
+    .contenedor-7-1 #letra-g-2{
+        font-size: 0.87rem;
+        width: 17rem;
+    }
+    .contenedor-7-1 #letra{
+        font-size: 0.6rem;
+        padding: 2rem 0rem 6rem 0rem;
+    } 
+    .contenedor-8 img{
+        width: 7.5rem;
+    }
+    .contenedor-9{
+        flex-direction: row;
+        padding: 3rem;
+        justify-content: space-around;
+    }
+    .contenedor-9 #letra-1{
+        font-size: 0.9rem;
+        padding: 3rem 0rem 1rem 0rem;
+        width: 10rem;
+    }
+    .contenedor-9 li{
+        font-size: 0.7rem;
+        padding-top: 1rem;
+    }
+    .contenedor-10{
+        flex-direction: row;
+        justify-content: center;
+        gap: 21rem;
+    }
+    .contenedor-10 p{
+        font-size: 0.6rem;
+        padding-bottom: 1rem;
+    }
+    .contenedor-10 p img{
+        width: 0.6rem;
+    }
+    .pagos{
+        width: 20rem;
+    }
+}
